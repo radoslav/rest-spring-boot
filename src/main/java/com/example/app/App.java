@@ -1,5 +1,6 @@
 package com.example.app;
 
+import com.example.app.models.Version;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,5 +18,10 @@ public class App {
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
         return String.format("Hello %s!", name);
+    }
+
+    @GetMapping("/version")
+    public Version version() {
+        return new Version(1L);
     }
 }
