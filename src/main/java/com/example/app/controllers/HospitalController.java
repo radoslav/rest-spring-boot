@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-// curl localhost:8080/hospital/new -d name=Anna
-// curl 'localhost:8080/hospital/all'
+// curl localhost:8080/hospitals/new -d name=Anna
+// curl 'localhost:8080/hospitals/'
 
 @Controller
-@RequestMapping(path = "/hospital")
+@RequestMapping(path = "/hospitals")
 public class HospitalController {
     @Autowired
     private HospitalRepository hospitalRepository;
