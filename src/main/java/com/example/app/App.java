@@ -15,11 +15,6 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
-    @GetMapping("/hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return String.format("Hello %s!", name);
-    }
-
     @GetMapping("/version")
     public Version version() {
         return new Version(1L);
