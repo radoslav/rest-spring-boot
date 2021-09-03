@@ -24,7 +24,7 @@ public class HospitalController {
         return "Saved";
     }
 
-    @GetMapping(path = "/all")
+    @GetMapping(path = "/")
     public @ResponseBody
     Iterable<Hospital> getAllHospitals() {
         return hospitalRepository.findAll();
