@@ -1,5 +1,10 @@
 # rest-spring-boot
 
+## Just for fun
+
+First project using Spring Boot.
+
+## Testing with db
 ```
 podman run --name mysql-hospital -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=hospital -p 3306:3306 -d mysql:8
 # connect
